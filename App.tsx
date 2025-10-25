@@ -59,7 +59,14 @@ const App: React.FC = () => {
   React.useEffect(() => {
     const q = query(collection(db, 'owners'), orderBy('name'));
     const unsub = onSnapshot(q, (snapshot) => {
-      const ownersData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Owner));
+      const ownersData = snapshot.docs.map(doc => {
+        const data = doc.data();
+        return {
+          id: doc.id,
+          name: data.name,
+          vehicles: data.vehicles || [],
+        } as Owner;
+      });
       setOwners(ownersData);
     });
     return () => unsub();
@@ -69,7 +76,14 @@ const App: React.FC = () => {
   React.useEffect(() => {
     const q = query(collection(db, 'attendants'), orderBy('name'));
     const unsub = onSnapshot(q, (snapshot) => {
-      const attendantsData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Attendant));
+      const attendantsData = snapshot.docs.map(doc => {
+        const data = doc.data();
+        return {
+          id: doc.id,
+          name: data.name,
+          avatarUrl: data.avatarUrl,
+        } as Attendant;
+      });
       setAttendants(attendantsData);
     });
     return () => unsub();
