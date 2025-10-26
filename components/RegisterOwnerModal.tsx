@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import type { Owner, Vehicle } from '../types';
-import { VehicleType } from '../types';
-import CloseIcon from './icons/CloseIcon';
+import type { Owner, Vehicle } from '../types.ts';
+import { VehicleType } from '../types.ts';
+import CloseIcon from './icons/CloseIcon.tsx';
 
 interface RegisterOwnerModalProps {
   isOpen: boolean;

@@ -1,5 +1,6 @@
+
 import React, { useState, useRef, useEffect } from 'react';
-import ChevronDownIcon from './icons/ChevronDownIcon';
+import ChevronDownIcon from './icons/ChevronDownIcon.tsx';
 
 interface SelectOption {
   value: string;

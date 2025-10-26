@@ -1,6 +1,6 @@
 import React from 'react';
-import type { Transaction } from '../types';
-import TransactionItem from './TransactionItem';
+import type { Transaction } from '../types.ts';
+import TransactionItem from './TransactionItem.tsx';
 
 interface TransactionHistoryProps {
   transactions: Transaction[];

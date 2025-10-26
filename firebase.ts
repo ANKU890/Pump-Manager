@@ -1,4 +1,5 @@
 
+// FIX: Changed to a named import for Firebase v9+ modular SDK.
 import { initializeApp } from 'firebase/app';
 import { 
   initializeFirestore, 
@@ -9,10 +10,11 @@ import {
   addDoc,
   writeBatch
 } from 'firebase/firestore';
-import { firebaseConfig } from './firebaseConfig';
-import type { Owner } from './types';
-import { VehicleType } from './types';
+import { firebaseConfig } from './firebaseConfig.ts';
+import type { Owner } from './types.ts';
+import { VehicleType } from './types.ts';
 
+// FIX: The `initializeApp` function is called directly when using the modular SDK.
 const app = initializeApp(firebaseConfig);
 
 // Initialize Firestore with offline persistence enabled using the new method
@@ -69,7 +71,7 @@ export async function seedInitialData() {
         if (attendantsSnapshot.empty) {
             console.log("No attendants found, seeding initial data...");
             const initialAttendants = [
-              { name: 'Ankit', avatarUrl: 'https://picsum.photos/seed/ankit/100/100' },
+              { name: 'Ankit', avatarUrl: 'https://i.ibb.co/yFzdsKL/ankit.jpg' },
               { name: 'Ashmit', avatarUrl: 'https://picsum.photos/seed/ashmit/100/100' },
             ];
             for (const attendant of initialAttendants) {

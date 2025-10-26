@@ -1,9 +1,9 @@
 import React from 'react';
-import PetrolIcon from './icons/PetrolIcon';
-import DieselIcon from './icons/DieselIcon';
-import TransactionIcon from './icons/TransactionIcon';
-import PaytmIcon from './icons/PaytmIcon';
-import StatItem from './StatItem';
+import PetrolIcon from './icons/PetrolIcon.tsx';
+import DieselIcon from './icons/DieselIcon.tsx';
+import TransactionIcon from './icons/TransactionIcon.tsx';
+import PaytmIcon from './icons/PaytmIcon.tsx';
+import StatItem from './StatItem.tsx';
 
 interface TotalSummaryCardProps {
   data: {

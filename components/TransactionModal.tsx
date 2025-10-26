@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import type { Settings, Transaction, Owner, Vehicle } from '../types';
-import { FuelType, PaymentMode, TransactionType, VehicleType } from '../types';
-import CloseIcon from './icons/CloseIcon';
-import RegisterOwnerModal from './RegisterOwnerModal';
-import CustomSelect from './CustomSelect';
+import type { Settings, Transaction, Owner, Vehicle } from '../types.ts';
+import { FuelType, PaymentMode, TransactionType, VehicleType } from '../types.ts';
+import CloseIcon from './icons/CloseIcon.tsx';
+import RegisterOwnerModal from './RegisterOwnerModal.tsx';
+import CustomSelect from './CustomSelect.tsx';
 
 interface TransactionModalProps {
   isOpen: boolean;

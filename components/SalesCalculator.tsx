@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import type { Settings, Transaction, DailyReadings } from '../types';
-import { TransactionType } from '../types';
+import type { Settings, Transaction, DailyReadings } from '../types.ts';
+import { TransactionType } from '../types.ts';
 
 interface SalesCalculatorProps {
   readings: DailyReadings;

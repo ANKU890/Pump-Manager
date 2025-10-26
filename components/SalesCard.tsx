@@ -1,11 +1,10 @@
-
 import React from 'react';
-import type { SalesData } from '../types';
-import PetrolIcon from './icons/PetrolIcon';
-import DieselIcon from './icons/DieselIcon';
-import CashIcon from './icons/CashIcon';
-import TransactionIcon from './icons/TransactionIcon';
-import StatItem from './StatItem';
+import type { SalesData } from '../types.ts';
+import PetrolIcon from './icons/PetrolIcon.tsx';
+import DieselIcon from './icons/DieselIcon.tsx';
+import CashIcon from './icons/CashIcon.tsx';
+import TransactionIcon from './icons/TransactionIcon.tsx';
+import StatItem from './StatItem.tsx';
 
 
 const SalesCard: React.FC<{ data: SalesData; onClick: () => void; }> = ({ data, onClick }) => {

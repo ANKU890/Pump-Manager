@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import CloseIcon from './icons/CloseIcon';
+import CloseIcon from './icons/CloseIcon.tsx';
 
 interface DepositModalProps {
   isOpen: boolean;

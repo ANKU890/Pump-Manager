@@ -1,18 +1,17 @@
-
 import React from 'react';
-import Header from './components/Header';
-import SalesCard from './components/SalesCard';
-import SettingsModal from './components/SettingsModal';
-import UserDashboard from './components/UserDashboard';
-import type { SalesData, Settings, Owner, Transaction, DailyReadings, Attendant } from './types';
-import { FuelType, PaymentMode, TransactionType } from './types';
-import TransactionHistory from './components/TransactionHistory';
-import FilterIcon from './components/icons/FilterIcon';
-import CustomSelect from './components/CustomSelect';
-import { db, seedInitialData, deleteAllDocsInCollection } from './firebase';
+import Header from './components/Header.tsx';
+import SalesCard from './components/SalesCard.tsx';
+import SettingsModal from './components/SettingsModal.tsx';
+import UserDashboard from './components/UserDashboard.tsx';
+import type { SalesData, Settings, Owner, Transaction, DailyReadings, Attendant } from './types.ts';
+import { FuelType, PaymentMode, TransactionType } from './types.ts';
+import TransactionHistory from './components/TransactionHistory.tsx';
+import FilterIcon from './components/icons/FilterIcon.tsx';
+import CustomSelect from './components/CustomSelect.tsx';
+import { db, seedInitialData, deleteAllDocsInCollection } from './firebase.ts';
 import { collection, doc, onSnapshot, orderBy, query, setDoc, addDoc, updateDoc, deleteDoc } from 'firebase/firestore';
-import TotalSummaryCard from './components/TotalSummaryCard';
-import MultiSelect from './components/MultiSelect';
+import TotalSummaryCard from './components/TotalSummaryCard.tsx';
+import MultiSelect from './components/MultiSelect.tsx';
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);

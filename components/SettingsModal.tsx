@@ -1,16 +1,15 @@
-
 import React, { useState, useEffect } from 'react';
-import type { Settings, Owner, Attendant, Vehicle } from '../types';
-import { VehicleType } from '../types';
-import CloseIcon from './icons/CloseIcon';
-import UserGroupIcon from './icons/UserGroupIcon';
-import EditIcon from './icons/EditIcon';
-import TrashIcon from './icons/TrashIcon';
-import PlusCircleIcon from './icons/PlusCircleIcon';
-import UsersIcon from './icons/UsersIcon';
-import CogIcon from './icons/CogIcon';
-import ClockIcon from './icons/ClockIcon';
-import AuthorizationModal from './AuthorizationModal';
+import type { Settings, Owner, Attendant, Vehicle } from '../types.ts';
+import { VehicleType } from '../types.ts';
+import CloseIcon from './icons/CloseIcon.tsx';
+import UserGroupIcon from './icons/UserGroupIcon.tsx';
+import EditIcon from './icons/EditIcon.tsx';
+import TrashIcon from './icons/TrashIcon.tsx';
+import PlusCircleIcon from './icons/PlusCircleIcon.tsx';
+import UsersIcon from './icons/UsersIcon.tsx';
+import CogIcon from './icons/CogIcon.tsx';
+import ClockIcon from './icons/ClockIcon.tsx';
+import AuthorizationModal from './AuthorizationModal.tsx';
 
 
 interface SettingsModalProps {

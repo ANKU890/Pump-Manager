@@ -1,14 +1,14 @@
 import React from 'react';
-import type { Transaction } from '../types';
-import { FuelType, PaymentMode, TransactionType } from '../types';
-import PetrolIcon from './icons/PetrolIcon';
-import DieselIcon from './icons/DieselIcon';
-import CashIcon from './icons/CashIcon';
-import CardIcon from './icons/CardIcon';
-import PaytmIcon from './icons/PaytmIcon';
-import BillIcon from './icons/BillIcon';
-import EditIcon from './icons/EditIcon';
-import DepositIcon from './icons/DepositIcon';
+import type { Transaction } from '../types.ts';
+import { FuelType, PaymentMode, TransactionType } from '../types.ts';
+import PetrolIcon from './icons/PetrolIcon.tsx';
+import DieselIcon from './icons/DieselIcon.tsx';
+import CashIcon from './icons/CashIcon.tsx';
+import CardIcon from './icons/CardIcon.tsx';
+import PaytmIcon from './icons/PaytmIcon.tsx';
+import BillIcon from './icons/BillIcon.tsx';
+import EditIcon from './icons/EditIcon.tsx';
+import DepositIcon from './icons/DepositIcon.tsx';
 
 interface TransactionItemProps {
   transaction: Transaction;

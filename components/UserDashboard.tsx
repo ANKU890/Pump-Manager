@@ -1,16 +1,15 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
-import type { SalesData, Settings, Transaction, Owner, DailyReadings } from '../types';
-import { TransactionType } from '../types';
-import BackArrowIcon from './icons/BackArrowIcon';
-import PlusIcon from './icons/PlusIcon';
-import TransactionModal from './TransactionModal';
-import TransactionHistory from './TransactionHistory';
-import DepositModal from './DepositModal';
-import DepositIcon from './icons/DepositIcon';
-import SalesCalculator from './SalesCalculator';
-import CalculatorIcon from './icons/CalculatorIcon';
-import ChevronDownIcon from './icons/ChevronDownIcon';
+import type { SalesData, Settings, Transaction, Owner, DailyReadings } from '../types.ts';
+import { TransactionType } from '../types.ts';
+import BackArrowIcon from './icons/BackArrowIcon.tsx';
+import PlusIcon from './icons/PlusIcon.tsx';
+import TransactionModal from './TransactionModal.tsx';
+import TransactionHistory from './TransactionHistory.tsx';
+import DepositModal from './DepositModal.tsx';
+import DepositIcon from './icons/DepositIcon.tsx';
+import SalesCalculator from './SalesCalculator.tsx';
+import CalculatorIcon from './icons/CalculatorIcon.tsx';
+import ChevronDownIcon from './icons/ChevronDownIcon.tsx';
 
 interface UserDashboardProps {
   user: SalesData;
